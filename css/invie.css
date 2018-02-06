@@ -272,6 +272,7 @@ input:focus, textarea:focus{
 	}
 	.contenedor-guitarra-b{
 		position: static;
+		margin: 0;
 	}
 	/* guitarra */
 
