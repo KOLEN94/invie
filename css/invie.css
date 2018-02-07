@@ -275,5 +275,24 @@ input:focus, textarea:focus{
 		margin: 0;
 	}
 	/* guitarra */
+	/* estilos para mobiles */
+	@media screen and (max-width:650px){
+		.header{
+			text-align: center;
+		}
+		.logotipo{
+			margin: 0;
+		}
+		.menu{
+			position: static;
+			display: block;
+		}
+		.menu li:first-child{
+			margin: 0;
+		}
+		.menu ul{
+			padding: 0;
+		}
+	}
 
 }
