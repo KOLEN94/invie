@@ -274,7 +274,46 @@ input:focus, textarea:focus{
 		position: static;
 		margin: 0;
 	}
+	.contenedor-guitarra-a{
+		padding: 0;
+	}
 	/* guitarra */
+	/* ancho menor a un ipad */
+	@media screen and (max-width: 767px){
+		/* footer */
+		.footer .contenedor{
+			display: block;
+		}
+		.contacto{
+			margin: 0 auto;
+		}
+		.formulario{
+			display: block;
+			margin: 0 auto;
+			width: 300px;
+		}
+		.intereses label{
+			display: block;
+			font-size: 16px;
+		}
+		.col1{
+			margin: 0;
+		}
+		input[type="text"],
+		input[type="email"]{
+			font-size: 16px;
+			padding: 5px;
+		}
+		textarea{
+			width: 100%;
+		}
+		input[type="radio"],
+		input[type="checkbox"]{
+			zoom: 1.5;
+		}
+		}
+		/* footer */
+	}
 	/* estilos para mobiles */
 	@media screen and (max-width:650px){
 		.header{
@@ -296,6 +335,7 @@ input:focus, textarea:focus{
 	}
 	/* estilos para mobiles 2 */
 	@media screen and (max-width:500px){
+		/* portada */
 		.menu li{
 			display: block;
 			margin: 0;
@@ -317,6 +357,12 @@ input:focus, textarea:focus{
 		.title{
 			font-size: 16px;
 		}
+		/* portada */
+		/* guitarra */
+		.guitarra img{
+			width: 200px;
+		}
+		/* guitarra */
 	}
 
 }
