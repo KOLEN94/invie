@@ -284,7 +284,7 @@ input:focus, textarea:focus{
 	background: #395667;
 	display: inline-block;
 	text-align: center;
-
+	cursor: pointer;
 	position: absolute;
 	left: 20px;
 	top: 20px;
