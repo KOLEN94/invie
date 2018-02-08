@@ -106,25 +106,31 @@
       </div>
     </footer>
     <script>
-      var consulta =window.matchMedia('(max-width: 800px)');
+      var consulta =window.matchMedia('(max-width: 500px)');
       consulta.addListener(mediaQuery);
+      
+      var $burgerButton=document.getElementById('burger-button');
+      var $menu=document.getElementById('menu');
+      function toggleMenu(){
+         $menu.classList.toggle('active');
+       };
       
       function mediaQuery(){
           if (consulta.matches) {
           //si se cumple hagamos esto
           console.log('se cumplio la condicion');
+          $burgerButton.addEventListener('touchstart',toggleMenu);
         } else {
           //si no se cumple hagamos esto
           console.log('no se cumplio la condicion');
+          $burgerButton.removeEventListener('touchstart',toggleMenu);
         }
       }
+      //se ejecuta al recargar o cargar la pag
+      mediaQuery();
+     
+      // $burgerButton.addEventListener('touchstart',toggleMenu);
       
-      var $burgerButton=document.getElementById('burger-button');
-      var $menu=document.getElementById('menu');
-      $burgerButton.addEventListener('touchstart',toggleMenu);
-      function toggleMenu(){
-        $menu.classList.toggle('active');
-      };
     </script>
 </body>
 </html>
