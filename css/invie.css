@@ -297,6 +297,16 @@ input:focus, textarea:focus{
 	color: white;
 	z-index: 3;
 }
+/*precios tabla responsive*/
+	.tabla{
+		margin: 50px 20px;
+	}
+	.tabla .contenedor{
+		overflow: auto;
+		border: 1px solid #273b47;
+	}
+/*precios tabla responsive*/
+
 	/* portada */
 	.titulo{
 		font-size: 45px;
