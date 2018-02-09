@@ -294,6 +294,7 @@ input:focus, textarea:focus{
 	position: absolute;
 	left: 20px;
 	top: 20px;
+	color: white;
 	z-index: 3;
 }
 	/* portada */
@@ -396,6 +397,12 @@ input:focus, textarea:focus{
 	@media screen and (max-width:500px){
 		/* portada */
 		.portada .contenedor{
+			position: static;
+		}
+		.header{
+			position: static;
+		}
+		.header .contenedor{
 			position: static;
 		}
 		.menu{
