@@ -278,6 +278,11 @@ input:focus, textarea:focus{
 	margin: 50px 0;
 }
 .burger-button{
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.burger-button{
 	width: 40px;
 	border-radius: 50%;
 	line-height: 40px;
@@ -291,7 +296,6 @@ input:focus, textarea:focus{
 	top: 20px;
 	z-index: 3;
 }
-@media screen and (max-width: 800px) {
 	/* portada */
 	.titulo{
 		font-size: 45px;
