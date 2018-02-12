@@ -280,9 +280,7 @@ input:focus, textarea:focus{
 .burger-button{
 	display: none;
 }
-
-@media screen and (max-width: 800px) {
-	.burger-button{
+.burger-button{
 	width: 40px;
 	border-radius: 50%;
 	line-height: 40px;
@@ -291,12 +289,26 @@ input:focus, textarea:focus{
 	display: inline-block;
 	text-align: center;
 	cursor: pointer;
-	position: absolute;
+	position: fixed;
 	left: 20px;
 	top: 20px;
 	color: white;
 	z-index: 3;
+	display: none;
 }
+.video-demo{
+	max-width: 500px;
+	/* margin: 0 auto 80px; */
+	width: 100%;
+	border: 5px solid #3c5b6e;
+}
+.video-demo-contenedor{
+	display: flex;
+	justify-content: center;
+	margin-bottom:80px ;
+}
+@media screen and (max-width: 800px) {
+	
 /*precios tabla responsive*/
 	.tabla{
 		margin: 50px 20px;
@@ -324,6 +336,9 @@ input:focus, textarea:focus{
 	}
 	/* portada */
 	/* guitarra */
+	.video-demo-contenedor{
+		margin-bottom: 30px;
+	}
 	.guitarra{
 		text-align: center;
 	}
@@ -380,7 +395,7 @@ input:focus, textarea:focus{
 		input[type="radio"],
 		input[type="checkbox"]{
 			zoom: 1.5;
-		}
+			}
 		}
 		/* footer */
 	}
@@ -402,10 +417,22 @@ input:focus, textarea:focus{
 		.menu ul{
 			padding: 0;
 		}
+		/* .video-demo{
+			margin: 0 10px;
+		} */
 	}
 	/* estilos para mobiles 2 */
 	@media screen and (max-width:500px){
 		/* portada */
+		.portada .button{/*boton grande un mobiles*/
+			display: block;
+		}
+		.precios .header .logotipo{/*margin en precios*/
+			margin: 50px 0;
+		}
+		.burger-button{
+			display: block;
+		}
 		.portada .contenedor{
 			position: static;
 		}
@@ -417,7 +444,7 @@ input:focus, textarea:focus{
 		}
 		.menu{
 			background: rgba(255, 60, 88, .8);
-			position: absolute;
+			position: fixed;/*menu siempre al frente en mobiles*/
 			left: -100%;
 			top: 0;
 			z-index: 2;
@@ -460,9 +487,22 @@ input:focus, textarea:focus{
 		.guitarra img{
 			width: 200px;
 		}
+		.title-b{
+			font-size: 30px;
+		}
+		/* .video-demo{
+			margin: 0 10px;
+		} */
 		/* guitarra */
+		/*footer*/
+		.col2{
+			align-items: stretch;/*boton grande un mobiles*/
+		}
+		/*footer*/
 	}
-
+	video{
+	width: 100%;
+	}
 .video-responsive-contenedor{
 	position: relative;
 	padding-top: 56.25%; 
