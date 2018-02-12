@@ -424,7 +424,10 @@ input:focus, textarea:focus{
 	/* estilos para mobiles 2 */
 	@media screen and (max-width:500px){
 		/* portada */
-		.precios .header .logotipo{
+		.portada .button{/*boton grande un mobiles*/
+			display: block;
+		}
+		.precios .header .logotipo{/*margin en precios*/
 			margin: 50px 0;
 		}
 		.burger-button{
@@ -491,6 +494,11 @@ input:focus, textarea:focus{
 			margin: 0 10px;
 		} */
 		/* guitarra */
+		/*footer*/
+		.col2{
+			align-items: stretch;/*boton grande un mobiles*/
+		}
+		/*footer*/
 	}
 	video{
 	width: 100%;
