@@ -438,7 +438,7 @@ input:focus, textarea:focus{
 		}
 		.menu{
 			background: rgba(255, 60, 88, .8);
-			position: absolute;
+			position: fixed;/*menu siempre al frente en mobiles*/
 			left: -100%;
 			top: 0;
 			z-index: 2;
