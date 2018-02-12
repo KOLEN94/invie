@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/invie.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
 	<title>Inivie - Precios !!</title>
 </head>
 <body>
@@ -103,5 +103,37 @@
 		</form>
 		</div>
 	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+	<script>
+		var consulta =window.matchMedia('(max-width: 500px)');
+		consulta.addListener(mediaQuery);
+		
+		var $burgerButton=document.getElementById('burger-button');
+		var $menu=document.getElementById('menu');
+		function toggleMenu(){
+			 $menu.classList.toggle('active');
+		 };
+		
+		function mediaQuery(){
+				if (consulta.matches) {
+				//si se cumple hagamos esto
+				console.log('se cumplio la condicion');
+				$burgerButton.addEventListener('touchstart',toggleMenu);
+			} else {
+				//si no se cumple hagamos esto
+				console.log('no se cumplio la condicion');
+				$burgerButton.removeEventListener('touchstart',toggleMenu);
+			}
+		}
+		//se ejecuta al recargar o cargar la pag
+		mediaQuery();
+	 
+		// $burgerButton.addEventListener('touchstart',toggleMenu);
+		//bLazy ->carga rapida de imagenes
+		var bLazy = new Blazy({
+			selector:'img'
+		});
+	</script>
+	<link rel="stylesheet" href="css/invie.css">
 </body>
 </html>
